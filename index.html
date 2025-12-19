@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AlBan - Giải pháp AI Hiện đại</title>
+    <title>AIban - Chatbot AI Chuyên Chốt Sale Đa Ngành</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
@@ -14,20 +14,20 @@
         <div class="container nav-container">
             <div class="logo">
                 <i class="fas fa-robot"></i>
-                <span class="logo-text">Al<span class="logo-highlight">Ban</span></span>
+                <span class="logo-text">AI<span class="logo-highlight">ban</span></span>
             </div>
             
             <div class="nav-menu" id="navMenu">
                 <a href="#home" class="nav-link active">Trang chủ</a>
                 <a href="#features" class="nav-link">Tính năng</a>
-                <a href="#about" class="nav-link">Giới thiệu</a>
+                <a href="#demo" class="nav-link">Demo Auto Chat</a>
+                <a href="#process" class="nav-link">Quy trình</a>
                 <a href="#pricing" class="nav-link">Bảng giá</a>
                 <a href="#contact" class="nav-link">Liên hệ</a>
             </div>
             
             <div class="nav-actions">
-                <button class="btn btn-outline">Đăng nhập</button>
-                <button class="btn btn-primary">Dùng thử miễn phí</button>
+                <button class="btn btn-primary">Liên hệ tư vấn</button>
             </div>
             
             <button class="menu-toggle" id="menuToggle">
@@ -41,33 +41,33 @@
         <div class="container hero-container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    <span class="gradient-text">Trí tuệ Nhân tạo</span><br>
-                    Cho Doanh nghiệp Hiện đại
+                    <span class="gradient-text">AIban - Chatbot AI</span><br>
+                    Chuyên Chốt Sale Tự Động
                 </h1>
                 <p class="hero-subtitle">
-                    AlChatbot mang đến giải pháp AI toàn diện, giúp tự động hóa quy trình, 
-                    tối ưu trải nghiệm khách hàng và tăng hiệu suất doanh nghiệp.
+                    Chatbot thông minh với khả năng tự động tư vấn, phát hiện nhu cầu và chủ động chốt sale cho mọi ngành hàng. 
+                    Giải pháp toàn diện giúp doanh nghiệp tăng doanh thu 24/7.
                 </p>
                 <div class="hero-actions">
-                    <button class="btn btn-primary btn-large">
-                        <i class="fas fa-play-circle"></i> Bắt đầu ngay
+                    <button class="btn btn-primary btn-large" id="viewDemo">
+                        <i class="fas fa-play-circle"></i> Xem Demo Auto Chat
                     </button>
-                    <button class="btn btn-secondary btn-large">
-                        <i class="fas fa-video"></i> Xem Demo
+                    <button class="btn btn-secondary btn-large" id="tryFree">
+                        <i class="fas fa-rocket"></i> Dùng thử miễn phí
                     </button>
                 </div>
                 <div class="hero-stats">
                     <div class="stat-item">
-                        <h3>10,000+</h3>
-                        <p>Doanh nghiệp tin dùng</p>
-                    </div>
-                    <div class="stat-item">
-                        <h3>99.9%</h3>
-                        <p>Độ chính xác</p>
+                        <h3>+40%</h3>
+                        <p>Tỷ lệ chốt sale</p>
                     </div>
                     <div class="stat-item">
                         <h3>24/7</h3>
-                        <p>Hỗ trợ khách hàng</p>
+                        <p>Hoạt động không ngừng</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>5 phút</h3>
+                        <p>Bàn giao đơn hàng</p>
                     </div>
                 </div>
             </div>
@@ -81,39 +81,49 @@
                                 <span class="dot yellow"></span>
                                 <span class="dot green"></span>
                             </div>
-                            <span class="ai-title">AlChatbot Assistant</span>
+                            <span class="ai-title">AIban Demo - Chốt Sale Tự Động</span>
                         </div>
-                        <div class="ai-messages">
+                        <div class="ai-messages" id="heroDemoChat">
+                            <div class="message bot">
+                                <div class="avatar">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="text">Xin chào! Tôi là AIban, chatbot chuyên chốt sale. Bạn đang quan tâm sản phẩm nào ạ?</div>
+                            </div>
                             <div class="message user">
                                 <div class="avatar">
                                     <i class="fas fa-user"></i>
                                 </div>
-                                <div class="text">Xin chào, tôi cần hỗ trợ về sản phẩm</div>
+                                <div class="text">Tôi muốn mua laptop gaming</div>
                             </div>
                             <div class="message bot">
                                 <div class="avatar">
                                     <i class="fas fa-robot"></i>
                                 </div>
-                                <div class="text">Xin chào! Tôi có thể giúp gì cho bạn? Chúng tôi có nhiều giải pháp AI phù hợp với nhu cầu của bạn.</div>
+                                <div class="text">Tuyệt vời! Laptop gaming RTX 4060 đang giảm 3 triệu. Còn 2 chiếc cuối kho!</div>
                             </div>
-                            <div class="message user">
-                                <div class="avatar">
-                                    <i class="fas fa-user"></i>
-                                </div>
-                                <div class="text">Tôi muốn biết về gói doanh nghiệp</div>
-                            </div>
-                            <div class="typing-indicator">
+                            <div class="typing-indicator" id="heroTyping">
                                 <span></span>
                                 <span></span>
                                 <span></span>
                             </div>
                         </div>
                         <div class="ai-input">
-                            <input type="text" placeholder="Nhập câu hỏi của bạn...">
-                            <button class="send-btn">
-                                <i class="fas fa-paper-plane"></i>
-                            </button>
+                            <div class="auto-chat-badge">
+                                <i class="fas fa-sync-alt"></i> AI đang tự động trả lời...
+                            </div>
                         </div>
+                    </div>
+                    <div class="chat-controls">
+                        <button class="chat-control-btn active" data-speed="normal">
+                            <i class="fas fa-play"></i> Tốc độ bình thường
+                        </button>
+                        <button class="chat-control-btn" data-speed="fast">
+                            <i class="fas fa-forward"></i> Tăng tốc 2x
+                        </button>
+                        <button class="chat-control-btn" id="restartChat">
+                            <i class="fas fa-redo"></i> Chạy lại
+                        </button>
                     </div>
                 </div>
             </div>
@@ -129,8 +139,8 @@
     <section class="features" id="features">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Tính năng <span class="highlight">Nổi bật</span></h2>
-                <p class="section-subtitle">Khám phá những tính năng đột phá của AlChatbot</p>
+                <h2 class="section-title">Tính năng <span class="highlight">Đột Phá</span></h2>
+                <p class="section-subtitle">AIban được tích hợp đầy đủ tính năng chốt sale thông minh</p>
             </div>
             
             <div class="features-grid">
@@ -138,117 +148,215 @@
                     <div class="feature-icon">
                         <i class="fas fa-brain"></i>
                     </div>
-                    <h3>AI Thông minh</h3>
-                    <p>Công nghệ AI tiên tiến, học hỏi và thích nghi với từng người dùng.</p>
+                    <h3>Phân Tích Thông Minh</h3>
+                    <p>Tự động phân tích giai đoạn mua hàng và điều chỉnh chiến lược tư vấn phù hợp.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-comments"></i>
+                        <i class="fas fa-bolt"></i>
                     </div>
-                    <h3>Đa ngôn ngữ</h3>
-                    <p>Hỗ trợ hơn 50 ngôn ngữ, phục vụ khách hàng toàn cầu.</p>
+                    <h3>Chốt Sale Tức Thì</h3>
+                    <p>Nhận diện dấu hiệu mua hàng và áp dụng kịch bản chốt sale ngay lập tức.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-sync-alt"></i>
                     </div>
-                    <h3>Phân tích Dữ liệu</h3>
-                    <p>Thu thập và phân tích dữ liệu để tối ưu hóa hiệu suất.</p>
+                    <h3>Tự Động Hóa 100%</h3>
+                    <p>Từ tư vấn, chốt sale đến bàn giao - hoàn toàn tự động không cần can thiệp.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Bảo mật Cao</h3>
-                    <p>Mã hóa end-to-end, đảm bảo an toàn thông tin tuyệt đối.</p>
+                    <h3>Xử Lý Từ Chối</h3>
+                    <p>Xử lý chuyên nghiệp các từ chối với phản hồi tập trung vào giá trị sản phẩm.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-plug"></i>
+                        <i class="fas fa-user-clock"></i>
                     </div>
-                    <h3>Tích hợp Dễ dàng</h3>
-                    <p>Kết nối với các nền tảng phổ biến chỉ trong vài phút.</p>
+                    <h3>Bàn Giao 5 Phút</h3>
+                    <p>Tự động thu thập thông tin và bàn giao đơn hàng cho NVKD trong 5 phút.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-headset"></i>
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>Hỗ trợ 24/7</h3>
-                    <p>Đội ngũ hỗ trợ luôn sẵn sàng giúp đỡ mọi lúc.</p>
+                    <h3>Tối Ưu Liên Tục</h3>
+                    <p>Phân tích hiệu suất và tự động tối ưu kịch bản để tăng tỷ lệ chuyển đổi.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container about-container">
-            <div class="about-image">
-                <div class="dashboard-preview">
-                    <div class="dashboard-header">
-                        <span>AlChatbot Dashboard</span>
-                        <div class="dashboard-stats">
-                            <span class="stat"><i class="fas fa-users"></i> 1,234 Online</span>
-                            <span class="stat"><i class="fas fa-check-circle"></i> 98% Satisfaction</span>
+    <!-- Auto Chat Demos Section -->
+    <section class="auto-chat-demos" id="demo">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Demo <span class="highlight">Tự Động Chốt Sale</span></h2>
+                <p class="section-subtitle">Xem AIban hoạt động chuyên nghiệp trên 3 ngành hàng phổ biến</p>
+            </div>
+            
+            <div class="demo-controls">
+                <div class="speed-control">
+                    <span>Tốc độ demo:</span>
+                    <button class="speed-btn active" data-speed="1">1x</button>
+                    <button class="speed-btn" data-speed="1.5">1.5x</button>
+                    <button class="speed-btn" data-speed="2">2x</button>
+                </div>
+                <button class="btn btn-outline" id="restartAllDemos">
+                    <i class="fas fa-redo"></i> Chạy lại tất cả
+                </button>
+            </div>
+            
+            <div class="demo-chat-container">
+                <!-- Demo 1: Thời trang -->
+                <div class="demo-chat-card">
+                    <div class="demo-chat-header">
+                        <div class="demo-title">
+                            <i class="fas fa-tshirt"></i>
+                            <h3>Ngành Thời Trang</h3>
+                        </div>
+                        <div class="demo-status">
+                            <span class="status-indicator active"></span>
+                            <span class="status-text">AIban đang tự động chat</span>
                         </div>
                     </div>
-                    <div class="dashboard-content">
-                        <div class="chart-container">
-                            <div class="chart" style="height: 70%; background: linear-gradient(180deg, #4cc9f0, #4361ee);"></div>
-                            <div class="chart-label">Hiệu suất</div>
+                    <div class="demo-chat-window" id="fashionChat">
+                        <!-- Messages will be auto-generated by JavaScript -->
+                    </div>
+                    
+                </div>
+                
+                <!-- Demo 2: Công nghệ -->
+                <div class="demo-chat-card">
+                    <div class="demo-chat-header">
+                        <div class="demo-title">
+                            <i class="fas fa-laptop"></i>
+                            <h3>Ngành Công Nghệ</h3>
                         </div>
-                        <div class="chart-container">
-                            <div class="chart" style="height: 85%; background: linear-gradient(180deg, #f72585, #b5179e);"></div>
-                            <div class="chart-label">Tương tác</div>
+                        <div class="demo-status">
+                            <span class="status-indicator active"></span>
+                            <span class="status-text">AIban đang tự động chat</span>
                         </div>
-                        <div class="chart-container">
-                            <div class="chart" style="height: 60%; background: linear-gradient(180deg, #4ad66d, #2a9d8f);"></div>
-                            <div class="chart-label">Độ chính xác</div>
+                    </div>
+                    <div class="demo-chat-window" id="techChat">
+                        <!-- Messages will be auto-generated by JavaScript -->
+                    </div>
+                    
+                </div>
+                
+                <!-- Demo 3: Thực phẩm -->
+                <div class="demo-chat-card">
+                    <div class="demo-chat-header">
+                        <div class="demo-title">
+                            <i class="fas fa-utensils"></i>
+                            <h3>Ngành Thực Phẩm</h3>
                         </div>
+                        <div class="demo-status">
+                            <span class="status-indicator active"></span>
+                            <span class="status-text">AIban đang tự động chat</span>
+                        </div>
+                    </div>
+                    <div class="demo-chat-window" id="foodChat">
+                        <!-- Messages will be auto-generated by JavaScript -->
+                    </div>
+                   
+                </div>
+            </div>
+            
+            <div class="demo-info">
+                <div class="info-card">
+                    <i class="fas fa-info-circle"></i>
+                    <h4>Hoạt động như thế nào?</h4>
+                    <p>AIban tự động phân tích tin nhắn, phát hiện dấu hiệu mua hàng và áp dụng kịch bản chốt sale phù hợp.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-cogs"></i>
+                    <h4>100% Tự động</h4>
+                    <p>Không cần can thiệp thủ công. AIban xử lý toàn bộ quy trình từ A đến Z.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h4>Thông minh hơn</h4>
+                    <p>Càng tương tác nhiều, AIban càng trở nên thông minh và hiệu quả hơn.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Quy Trình <span class="highlight">3 Giai Đoạn</span></h2>
+                <p class="section-subtitle">Sơ đồ Mind Map tối ưu hóa chốt sale của AIban</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Khởi Động & Nhận Diện</h3>
+                        <p>AIban phân tích giai đoạn mua hàng, thu thập dữ liệu và xác định chiến lược tư vấn phù hợp.</p>
+                        <ul class="step-features">
+                            <li>Chào hỏi & thu thập thông tin</li>
+                            <li>Phân tích từ khóa</li>
+                            <li>Xác định giai đoạn mua hàng</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Phát Hiện & Chốt Sale</h3>
+                        <p>Phát hiện dấu hiệu mua hàng mạnh và chuyển thẳng sang kịch bản chốt sale tức thì.</p>
+                        <ul class="step-features">
+                            <li>Nhận diện tín hiệu mua hàng</li>
+                            <li>Áp dụng ưu đãi độc quyền</li>
+                            <li>Xử lý từ chối chuyên nghiệp</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Bàn Giao & Hoàn Tất</h3>
+                        <p>Tự động thu thập thông tin và bàn giao cho đội ngũ kinh doanh trong vòng 5 phút.</p>
+                        <ul class="step-features">
+                            <li>Xác nhận đơn hàng</li>
+                            <li>Thu thập thông tin khách</li>
+                            <li>Bàn giao cho NVKD</li>
+                            <li>Follow-up khách hàng</li>
+                        </ul>
                     </div>
                 </div>
             </div>
             
-            <div class="about-content">
-                <h2 class="section-title">Về <span class="highlight">AlChatbot</span></h2>
-                <p class="about-description">
-                    AlChatbot là nền tảng trí tuệ nhân tạo hàng đầu, được phát triển bởi đội ngũ chuyên gia với hơn 10 năm kinh nghiệm trong lĩnh vực AI và Machine Learning.
-                </p>
-                
-                <div class="about-features">
-                    <div class="about-feature">
-                        <i class="fas fa-check-circle"></i>
-                        <div>
-                            <h4>Công nghệ tiên tiến</h4>
-                            <p>Sử dụng mô hình GPT-4 và BERT cho độ chính xác cao</p>
-                        </div>
+            <div class="process-diagram">
+                <div class="diagram-container">
+                    <div class="diagram-item start">Khách hàng bắt đầu chat</div>
+                    <div class="diagram-arrow">↓</div>
+                    <div class="diagram-item phase1">Giai đoạn 1: Nhận diện nhu cầu</div>
+                    <div class="diagram-arrow">↓</div>
+                    <div class="diagram-item decision">Phát hiện dấu hiệu mua hàng?</div>
+                    <div class="diagram-branch">
+                        <div class="branch-yes">CÓ → Chốt sale ngay</div>
+                        <div class="branch-no">KHÔNG → Tư vấn chi tiết</div>
                     </div>
-                    
-                    <div class="about-feature">
-                        <i class="fas fa-check-circle"></i>
-                        <div>
-                            <h4>Triển khai nhanh chóng</h4>
-                            <p>Thiết lập và chạy chỉ trong 15 phút</p>
-                        </div>
-                    </div>
-                    
-                    <div class="about-feature">
-                        <i class="fas fa-check-circle"></i>
-                        <div>
-                            <h4>Tiết kiệm chi phí</h4>
-                            <p>Giảm đến 70% chi phí hỗ trợ khách hàng</p>
-                        </div>
-                    </div>
+                    <div class="diagram-arrow">↓</div>
+                    <div class="diagram-item phase3">Giai đoạn 3: Bàn giao đơn hàng</div>
+                    <div class="diagram-arrow">↓</div>
+                    <div class="diagram-item end">Thành công!</div>
                 </div>
-                
-                <button class="btn btn-primary">
-                    <i class="fas fa-book"></i> Tìm hiểu thêm
-                </button>
             </div>
         </div>
     </section>
@@ -258,27 +366,26 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Bảng giá <span class="highlight">Linh hoạt</span></h2>
-                <p class="section-subtitle">Chọn gói phù hợp với nhu cầu doanh nghiệp của bạn</p>
+                <p class="section-subtitle">Chọn gói phù hợp với quy mô doanh nghiệp của bạn</p>
             </div>
             
             <div class="pricing-cards">
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <h3>Cơ bản</h3>
+                        <h3>Gói 1</h3>
                         <div class="price">
-                            <span class="currency">₫</span>
-                            <span class="amount">299,000</span>
+                            <span class="amount">699,000</span>
                             <span class="period">/tháng</span>
                         </div>
-                        <p>Phù hợp cho startups</p>
+                        
                     </div>
                     
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> 1,000 tin nhắn/tháng</li>
-                        <li><i class="fas fa-check"></i> 1 Chatbot</li>
-                        <li><i class="fas fa-check"></i> Hỗ trợ cơ bản</li>
-                        <li><i class="fas fa-check"></i> Tích hợp website</li>
-                        <li><i class="fas fa-times"></i> Phân tích nâng cao</li>
+                        <li><i class="fas fa-check"></i> 1 Chatbot AIban</li>
+                        <li><i class="fas fa-check"></i> Tư vấn tự động cơ bản</li>
+                        <li><i class="fas fa-check"></i> + 1 account</li>
+                        <li><i class="fas fa-check"></i> + 500 token</li>
+                        <li><i class="fas fa-check"></i> + Setup kịch bản</li>
                     </ul>
                     
                     <button class="btn btn-outline btn-block">Chọn gói</button>
@@ -287,21 +394,21 @@
                 <div class="pricing-card popular">
                     <div class="popular-badge">Phổ biến nhất</div>
                     <div class="pricing-header">
-                        <h3>Doanh nghiệp</h3>
+                        <h3>Gói 2</h3>
                         <div class="price">
-                            <span class="currency">₫</span>
-                            <span class="amount">899,000</span>
+                            <span class="amount">799,000</span>
                             <span class="period">/tháng</span>
                         </div>
-                        <p>Hoàn hảo cho doanh nghiệp vừa</p>
+                     
                     </div>
                     
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> 10,000 tin nhắn/tháng</li>
-                        <li><i class="fas fa-check"></i> 5 Chatbot</li>
-                        <li><i class="fas fa-check"></i> Hỗ trợ ưu tiên</li>
-                        <li><i class="fas fa-check"></i> Tích hợp đa nền tảng</li>
-                        <li><i class="fas fa-check"></i> Phân tích cơ bản</li>
+                        <li><i class="fas fa-check"></i> 1 Chatbot AIban</li>
+                        <li><i class="fas fa-check"></i> Tư vấn tự động cơ bản</li>
+                        <li><i class="fas fa-check"></i> +1 account</li>
+                        <li><i class="fas fa-check"></i> + 1000 token</li>
+                        <li><i class="fas fa-check"></i> + Setup kịch bản</li>
+                        <li><i class="fas fa-check"></i> Hỗ trợ 24/7</li>
                     </ul>
                     
                     <button class="btn btn-primary btn-block">Chọn gói</button>
@@ -309,24 +416,24 @@
                 
                 <div class="pricing-card">
                     <div class="pricing-header">
-                        <h3>Doanh nghiệp +</h3>
+                        <h3>Gói 3</h3>
                         <div class="price">
-                            <span class="currency">₫</span>
                             <span class="amount">1,499,000</span>
                             <span class="period">/tháng</span>
                         </div>
-                        <p>Dành cho doanh nghiệp lớn</p>
+                        
                     </div>
                     
                     <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Tin nhắn không giới hạn</li>
-                        <li><i class="fas fa-check"></i> Unlimited Chatbots</li>
+                        <li><i class="fas fa-check"></i> 1 Chatbot AIban</li>
+                        <li><i class="fas fa-check"></i> Tư vấn tự động cơ bản</li>
+                        <li><i class="fas fa-check"></i> + 2 account</li>
+                        <li><i class="fas fa-check"></i> + 2000 token</li>
+                        <li><i class="fas fa-check"></i> + Setup kịch bản</li>
                         <li><i class="fas fa-check"></i> Hỗ trợ 24/7</li>
-                        <li><i class="fas fa-check"></i> Tích hợp API</li>
-                        <li><i class="fas fa-check"></i> Phân tích nâng cao</li>
                     </ul>
                     
-                    <button class="btn btn-outline btn-block">Chọn gói</button>
+                    <button class="btn btn-outline btn-block">Liên hệ tư vấn</button>
                 </div>
             </div>
         </div>
@@ -336,17 +443,11 @@
     <section class="cta">
         <div class="container cta-container">
             <div class="cta-content">
-                <h2>Sẵn sàng trải nghiệm <span class="highlight">AlChatbot</span>?</h2>
-                <p>Đăng ký ngay để nhận 14 ngày dùng thử miễn phí. Không cần thẻ tín dụng.</p>
+                <h2>Sẵn sàng tăng <span class="highlight">40% doanh số</span> với AIban?</h2>
+                <p>Đăng ký ngay để nhận 7 ngày dùng thử miễn phí đầy đủ tính năng. Không cần thẻ tín dụng.</p>
             </div>
             
-            <div class="cta-form">
-                <div class="input-group">
-                    <input type="email" placeholder="Nhập email của bạn">
-                    <button class="btn btn-primary">Bắt đầu miễn phí</button>
-                </div>
-                <p class="form-note">Bằng cách đăng ký, bạn đồng ý với Điều khoản dịch vụ</p>
-            </div>
+           
         </div>
     </section>
 
@@ -356,62 +457,61 @@
             <div class="footer-col">
                 <div class="logo">
                     <i class="fas fa-robot"></i>
-                    <span class="logo-text">Al<span class="logo-highlight">Chatbot</span></span>
+                    <span class="logo-text"><span class="logo-highlight">AIban</span></span>
                 </div>
                 <p class="footer-description">
-                    Nền tảng AI hàng đầu cho doanh nghiệp hiện đại
+                    Giải pháp AI Chatbot chuyên chốt sale số 1 Việt Nam
                 </p>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-zalo"></i></a>
                 </div>
             </div>
             
             <div class="footer-col">
-                <h4>Sản phẩm</h4>
+                <h4>Tính năng</h4>
                 <ul>
-                    <li><a href="#">Tính năng</a></li>
-                    <li><a href="#">Bảng giá</a></li>
-                    <li><a href="#">API</a></li>
-                    <li><a href="#">Tài liệu</a></li>
+                    <li><a href="#features">Tư vấn tự động</a></li>
+                    <li><a href="#features">Chốt sale chủ động</a></li>
+                    <li><a href="#features">Xử lý từ chối</a></li>
+                    <li><a href="#features">Bàn giao tự động</a></li>
                 </ul>
             </div>
             
             <div class="footer-col">
-                <h4>Công ty</h4>
+                <h4>Demo</h4>
                 <ul>
-                    <li><a href="#">Về chúng tôi</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Tuyển dụng</a></li>
-                    <li><a href="#">Liên hệ</a></li>
+                    <li><a href="#demo">Thời trang</a></li>
+                    <li><a href="#demo">Công nghệ</a></li>
+                    <li><a href="#demo">Thực phẩm</a></li>
+                    <li><a href="#demo">Tự động hóa</a></li>
                 </ul>
             </div>
             
             <div class="footer-col">
                 <h4>Hỗ trợ</h4>
                 <ul>
-                    <li><a href="#">Trung tâm trợ giúp</a></li>
-                    <li><a href="#">Điều khoản</a></li>
-                    <li><a href="#">Bảo mật</a></li>
                     <li><a href="#">Câu hỏi thường gặp</a></li>
+                    <li><a href="#">Hướng dẫn sử dụng</a></li>
+                    <li><a href="#">Điều khoản dịch vụ</a></li>
+                    <li><a href="#">Chính sách bảo mật</a></li>
                 </ul>
             </div>
             
             <div class="footer-col">
                 <h4>Liên hệ</h4>
                 <ul>
-                    <li><i class="fas fa-map-marker-alt"></i> TP. Hồ Chí Minh, Việt Nam</li>
-                    <li><i class="fas fa-phone"></i> +84 123 456 789</li>
-                    <li><i class="fas fa-envelope"></i> info@alchatbot.com</li>
+                    <li><i class="fas fa-envelope"></i> support@aiban.vn</li>
+                    <li><i class="fas fa-clock"></i> Thứ 2-7: 8h00-18h00</li>
                 </ul>
             </div>
         </div>
         
         <div class="footer-bottom">
             <div class="container">
-                <p>&copy; 2024 AlChatbot. Tất cả các quyền được bảo lưu.</p>
+                <p>&copy; 2025 AIban - Giải pháp AI Chatbot Chốt Sale. Tất cả các quyền được bảo lưu.</p>
             </div>
         </div>
     </footer>
@@ -420,6 +520,56 @@
     <button class="back-to-top" id="backToTop">
         <i class="fas fa-chevron-up"></i>
     </button>
+
+<!-- Contact Floating Button -->
+<div class="contact-floating" id="contactFloating">
+    <!-- Main Button -->
+    <button class="contact-main-btn" id="contactMainBtn">
+        <i class="fas fa-phone"></i>
+    </button>
+    
+    <!-- Contact Options - 3 Hotlines only -->
+    <div class="contact-options">
+        <!-- Hotline 1 -->
+        <a href="tel:0909123456" class="contact-option hotline-1">
+            <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-info">
+                <span class="contact-label">A.Tiến</span>
+                <span class="contact-number">0817287666</span>
+            </div>
+        </a>
+        
+        <!-- Hotline 2 -->
+        <a href="tel:0918123456" class="contact-option hotline-2">
+            <div class="contact-icon">
+                <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contact-info">
+                <span class="contact-label">A.Văn</span>
+                <span class="contact-number">0919332220</span>
+            </div>
+        </a>
+        
+        <!-- Hotline 3 -->
+        <a href="tel:0923123456" class="contact-option hotline-3">
+            <div class="contact-icon">
+                <i class="fas fa-headset"></i>
+            </div>
+            <div class="contact-info">
+                <span class="contact-label">A.Văn</span>
+                <span class="contact-number">0919332220</span>
+            </div>
+        </a>
+    </div>
+    
+    <!-- Tooltip -->
+    <div class="contact-tooltip" id="contactTooltip">
+        <span>Liên hệ nhanh</span>
+        <div class="tooltip-arrow"></div>
+    </div>
+</div>
 
     <script src="script.js"></script>
 </body>
