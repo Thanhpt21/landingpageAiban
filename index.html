@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlBan - Giải pháp AI Hiện đại</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-robot"></i>
+                <span class="logo-text">Al<span class="logo-highlight">Ban</span></span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active">Trang chủ</a>
+                <a href="#features" class="nav-link">Tính năng</a>
+                <a href="#about" class="nav-link">Giới thiệu</a>
+                <a href="#pricing" class="nav-link">Bảng giá</a>
+                <a href="#contact" class="nav-link">Liên hệ</a>
+            </div>
+            
+            <div class="nav-actions">
+                <button class="btn btn-outline">Đăng nhập</button>
+                <button class="btn btn-primary">Dùng thử miễn phí</button>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Trí tuệ Nhân tạo</span><br>
+                    Cho Doanh nghiệp Hiện đại
+                </h1>
+                <p class="hero-subtitle">
+                    AlChatbot mang đến giải pháp AI toàn diện, giúp tự động hóa quy trình, 
+                    tối ưu trải nghiệm khách hàng và tăng hiệu suất doanh nghiệp.
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary btn-large">
+                        <i class="fas fa-play-circle"></i> Bắt đầu ngay
+                    </button>
+                    <button class="btn btn-secondary btn-large">
+                        <i class="fas fa-video"></i> Xem Demo
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>10,000+</h3>
+                        <p>Doanh nghiệp tin dùng</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>99.9%</h3>
+                        <p>Độ chính xác</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p>Hỗ trợ khách hàng</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="image-container">
+                    <div class="ai-interface">
+                        <div class="ai-header">
+                            <div class="ai-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <span class="ai-title">AlChatbot Assistant</span>
+                        </div>
+                        <div class="ai-messages">
+                            <div class="message user">
+                                <div class="avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="text">Xin chào, tôi cần hỗ trợ về sản phẩm</div>
+                            </div>
+                            <div class="message bot">
+                                <div class="avatar">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="text">Xin chào! Tôi có thể giúp gì cho bạn? Chúng tôi có nhiều giải pháp AI phù hợp với nhu cầu của bạn.</div>
+                            </div>
+                            <div class="message user">
+                                <div class="avatar">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="text">Tôi muốn biết về gói doanh nghiệp</div>
+                            </div>
+                            <div class="typing-indicator">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="ai-input">
+                            <input type="text" placeholder="Nhập câu hỏi của bạn...">
+                            <button class="send-btn">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tính năng <span class="highlight">Nổi bật</span></h2>
+                <p class="section-subtitle">Khám phá những tính năng đột phá của AlChatbot</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI Thông minh</h3>
+                    <p>Công nghệ AI tiên tiến, học hỏi và thích nghi với từng người dùng.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Đa ngôn ngữ</h3>
+                    <p>Hỗ trợ hơn 50 ngôn ngữ, phục vụ khách hàng toàn cầu.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Phân tích Dữ liệu</h3>
+                    <p>Thu thập và phân tích dữ liệu để tối ưu hóa hiệu suất.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Bảo mật Cao</h3>
+                    <p>Mã hóa end-to-end, đảm bảo an toàn thông tin tuyệt đối.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3>Tích hợp Dễ dàng</h3>
+                    <p>Kết nối với các nền tảng phổ biến chỉ trong vài phút.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Hỗ trợ 24/7</h3>
+                    <p>Đội ngũ hỗ trợ luôn sẵn sàng giúp đỡ mọi lúc.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container about-container">
+            <div class="about-image">
+                <div class="dashboard-preview">
+                    <div class="dashboard-header">
+                        <span>AlChatbot Dashboard</span>
+                        <div class="dashboard-stats">
+                            <span class="stat"><i class="fas fa-users"></i> 1,234 Online</span>
+                            <span class="stat"><i class="fas fa-check-circle"></i> 98% Satisfaction</span>
+                        </div>
+                    </div>
+                    <div class="dashboard-content">
+                        <div class="chart-container">
+                            <div class="chart" style="height: 70%; background: linear-gradient(180deg, #4cc9f0, #4361ee);"></div>
+                            <div class="chart-label">Hiệu suất</div>
+                        </div>
+                        <div class="chart-container">
+                            <div class="chart" style="height: 85%; background: linear-gradient(180deg, #f72585, #b5179e);"></div>
+                            <div class="chart-label">Tương tác</div>
+                        </div>
+                        <div class="chart-container">
+                            <div class="chart" style="height: 60%; background: linear-gradient(180deg, #4ad66d, #2a9d8f);"></div>
+                            <div class="chart-label">Độ chính xác</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-content">
+                <h2 class="section-title">Về <span class="highlight">AlChatbot</span></h2>
+                <p class="about-description">
+                    AlChatbot là nền tảng trí tuệ nhân tạo hàng đầu, được phát triển bởi đội ngũ chuyên gia với hơn 10 năm kinh nghiệm trong lĩnh vực AI và Machine Learning.
+                </p>
+                
+                <div class="about-features">
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Công nghệ tiên tiến</h4>
+                            <p>Sử dụng mô hình GPT-4 và BERT cho độ chính xác cao</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Triển khai nhanh chóng</h4>
+                            <p>Thiết lập và chạy chỉ trong 15 phút</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-feature">
+                        <i class="fas fa-check-circle"></i>
+                        <div>
+                            <h4>Tiết kiệm chi phí</h4>
+                            <p>Giảm đến 70% chi phí hỗ trợ khách hàng</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="btn btn-primary">
+                    <i class="fas fa-book"></i> Tìm hiểu thêm
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Bảng giá <span class="highlight">Linh hoạt</span></h2>
+                <p class="section-subtitle">Chọn gói phù hợp với nhu cầu doanh nghiệp của bạn</p>
+            </div>
+            
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Cơ bản</h3>
+                        <div class="price">
+                            <span class="currency">₫</span>
+                            <span class="amount">299,000</span>
+                            <span class="period">/tháng</span>
+                        </div>
+                        <p>Phù hợp cho startups</p>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 1,000 tin nhắn/tháng</li>
+                        <li><i class="fas fa-check"></i> 1 Chatbot</li>
+                        <li><i class="fas fa-check"></i> Hỗ trợ cơ bản</li>
+                        <li><i class="fas fa-check"></i> Tích hợp website</li>
+                        <li><i class="fas fa-times"></i> Phân tích nâng cao</li>
+                    </ul>
+                    
+                    <button class="btn btn-outline btn-block">Chọn gói</button>
+                </div>
+                
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Phổ biến nhất</div>
+                    <div class="pricing-header">
+                        <h3>Doanh nghiệp</h3>
+                        <div class="price">
+                            <span class="currency">₫</span>
+                            <span class="amount">899,000</span>
+                            <span class="period">/tháng</span>
+                        </div>
+                        <p>Hoàn hảo cho doanh nghiệp vừa</p>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> 10,000 tin nhắn/tháng</li>
+                        <li><i class="fas fa-check"></i> 5 Chatbot</li>
+                        <li><i class="fas fa-check"></i> Hỗ trợ ưu tiên</li>
+                        <li><i class="fas fa-check"></i> Tích hợp đa nền tảng</li>
+                        <li><i class="fas fa-check"></i> Phân tích cơ bản</li>
+                    </ul>
+                    
+                    <button class="btn btn-primary btn-block">Chọn gói</button>
+                </div>
+                
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Doanh nghiệp +</h3>
+                        <div class="price">
+                            <span class="currency">₫</span>
+                            <span class="amount">1,499,000</span>
+                            <span class="period">/tháng</span>
+                        </div>
+                        <p>Dành cho doanh nghiệp lớn</p>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Tin nhắn không giới hạn</li>
+                        <li><i class="fas fa-check"></i> Unlimited Chatbots</li>
+                        <li><i class="fas fa-check"></i> Hỗ trợ 24/7</li>
+                        <li><i class="fas fa-check"></i> Tích hợp API</li>
+                        <li><i class="fas fa-check"></i> Phân tích nâng cao</li>
+                    </ul>
+                    
+                    <button class="btn btn-outline btn-block">Chọn gói</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container cta-container">
+            <div class="cta-content">
+                <h2>Sẵn sàng trải nghiệm <span class="highlight">AlChatbot</span>?</h2>
+                <p>Đăng ký ngay để nhận 14 ngày dùng thử miễn phí. Không cần thẻ tín dụng.</p>
+            </div>
+            
+            <div class="cta-form">
+                <div class="input-group">
+                    <input type="email" placeholder="Nhập email của bạn">
+                    <button class="btn btn-primary">Bắt đầu miễn phí</button>
+                </div>
+                <p class="form-note">Bằng cách đăng ký, bạn đồng ý với Điều khoản dịch vụ</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <div class="logo">
+                    <i class="fas fa-robot"></i>
+                    <span class="logo-text">Al<span class="logo-highlight">Chatbot</span></span>
+                </div>
+                <p class="footer-description">
+                    Nền tảng AI hàng đầu cho doanh nghiệp hiện đại
+                </p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Sản phẩm</h4>
+                <ul>
+                    <li><a href="#">Tính năng</a></li>
+                    <li><a href="#">Bảng giá</a></li>
+                    <li><a href="#">API</a></li>
+                    <li><a href="#">Tài liệu</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Công ty</h4>
+                <ul>
+                    <li><a href="#">Về chúng tôi</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Tuyển dụng</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Hỗ trợ</h4>
+                <ul>
+                    <li><a href="#">Trung tâm trợ giúp</a></li>
+                    <li><a href="#">Điều khoản</a></li>
+                    <li><a href="#">Bảo mật</a></li>
+                    <li><a href="#">Câu hỏi thường gặp</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Liên hệ</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> TP. Hồ Chí Minh, Việt Nam</li>
+                    <li><i class="fas fa-phone"></i> +84 123 456 789</li>
+                    <li><i class="fas fa-envelope"></i> info@alchatbot.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 AlChatbot. Tất cả các quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
